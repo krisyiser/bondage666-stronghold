@@ -3,9 +3,11 @@ CREATE TABLE IF NOT EXISTS profiles (
   id UUID REFERENCES auth.users ON DELETE CASCADE PRIMARY KEY,
   username TEXT UNIQUE NOT NULL,
   avatar_url TEXT,
-  role TEXT CHECK (role IN ('admin', 'fan')) DEFAULT 'fan',
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
+
+-- Ensure role column exists
+ALTER TABLE profiles ADD COLUMN IF NOT EXISTS role TEXT CHECK (role IN ('admin', 'fan')) DEFAULT 'fan';
 
 -- Create Products Table
 CREATE TABLE IF NOT EXISTS products (
