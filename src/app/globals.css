@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
 
 @theme {
   --font-display: "Pirata One", system-ui;
@@ -9,6 +9,9 @@
   --color-electric-purple: #9d00ff;
   --color-cobalt-blue: #0070ff;
   --color-hell-red: #ff0033;
+  
+  --color-background: #050505;
+  --color-foreground: #f5f5f5;
   
   --background-obsidian: #050505;
   --foreground-bone: #f5f5f5;

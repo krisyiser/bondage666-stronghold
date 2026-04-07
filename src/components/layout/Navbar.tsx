@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LucideShoppingBag, LucideUser, LucideMenu } from "lucide-react";
+import { ShoppingBag, User, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -28,14 +28,14 @@ export default function Navbar() {
 
       <div className="flex items-center gap-6">
         <button className="relative group p-2 glass-dark hover:neon-border-purple">
-          <LucideShoppingBag className="w-5 h-5 text-white group-hover:text-electric-purple" />
+          <ShoppingBag className="w-5 h-5 text-white group-hover:text-electric-purple" />
           <span className="absolute -top-1 -right-1 w-4 h-4 bg-hell-red text-[10px] rounded-full flex items-center justify-center font-bold">0</span>
         </button>
         <button className="p-2 glass-dark hover:neon-border-blue hidden md:block">
-          <LucideUser className="w-5 h-5 text-white hover:text-cobalt-blue" />
+          <User className="w-5 h-5 text-white hover:text-cobalt-blue" />
         </button>
         <button className="md:hidden p-2 glass-dark" onClick={() => setIsOpen(!isOpen)}>
-          <LucideMenu className="w-6 h-6" />
+          <Menu className="w-6 h-6" />
         </button>
       </div>
 
