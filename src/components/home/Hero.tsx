@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Radiation, Skull, Zap } from "lucide-react";
+import { LucideRadiation, LucideSkull, LucideZap } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -38,9 +38,9 @@ export default function Hero() {
           className="space-y-4"
         >
           <div className="flex items-center justify-center gap-4 mb-2">
-            <Radiation className="text-electric-purple w-8 h-8 animate-pulse" />
+            <LucideRadiation className="text-electric-purple w-8 h-8 animate-pulse" />
             <span className="text-xs uppercase tracking-[0.5em] text-white/40">PROJECT: DARKNESS ACTIVE</span>
-            <Radiation className="text-cobalt-blue w-8 h-8 animate-pulse" />
+            <LucideRadiation className="text-cobalt-blue w-8 h-8 animate-pulse" />
           </div>
           
           <h1 className="text-8xl md:text-9xl font-display text-white glitch-text tracking-tighter">
@@ -82,7 +82,7 @@ export default function Hero() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute bottom-10 left-10 text-white/5"
       >
-        <Skull size={120} />
+        <LucideSkull size={120} />
       </motion.div>
       
       <motion.div
@@ -93,7 +93,7 @@ export default function Hero() {
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-10 right-10 text-white/5"
       >
-        <Zap size={100} />
+        <LucideZap size={100} />
       </motion.div>
 
       {/* Decorative Scanlines */}
