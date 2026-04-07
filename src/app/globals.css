@@ -80,4 +80,18 @@
     opacity: 0.03;
     pointer-events: none;
   }
+
+  @keyframes lightning-flash {
+    0%, 100% { opacity: 0; }
+    92% { opacity: 0; }
+    93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 0.8; }
+    98% { opacity: 0; }
+  }
+
+  .lightning-overlay {
+    @apply absolute inset-0 bg-white pointer-events-none;
+    animation: lightning-flash 5s infinite;
+  }
 }

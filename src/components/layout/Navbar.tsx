@@ -11,19 +11,17 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 glass border-b border-white/5 px-6 py-4 flex items-center justify-between">
       <Link href="/" className="flex items-center gap-3 group">
-        <div className="w-10 h-10 bg-electric-purple text-white flex items-center justify-center font-display text-2xl group-hover:rotate-[360deg] transition-transform duration-500 shadow-neon-purple">
-          B
+        <div className="h-10 w-auto group-hover:scale-110 transition-transform duration-500">
+          <img src="/navbar-logo.png" alt="BONDAGE666" className="h-full w-auto object-contain" />
         </div>
-        <span className="font-display text-2xl tracking-tighter uppercase group-hover:text-electric-purple transition-colors">
-          BONDAGE<span className="text-electric-purple">666</span>
-        </span>
       </Link>
 
-      <div className="hidden md:flex items-center gap-12 font-sans text-xs tracking-[0.3em] font-bold uppercase transition-colors">
-        <Link href="/" className="hover:text-electric-purple transition-colors">Digital Stronghold</Link>
-        <Link href="#merch" className="hover:text-electric-purple transition-colors">The Pit</Link>
-        <Link href="#tour" className="hover:text-electric-purple transition-colors">Electric Hell Tour</Link>
-        <Link href="/backstage" className="text-cobalt-blue hover:text-white transition-colors border-b border-cobalt-blue pb-1">Backstage</Link>
+      <div className="hidden md:flex items-center gap-12 font-sans text-xs tracking-[0.3em] font-bold uppercase">
+        <Link href="#banda" className="hover:text-electric-purple transition-colors">Banda</Link>
+        <Link href="#merch" className="hover:text-electric-purple transition-colors">Merch</Link>
+        <Link href="#discografia" className="hover:text-electric-purple transition-colors">Discografia</Link>
+        <Link href="#media" className="hover:text-electric-purple transition-colors">Media</Link>
+        <Link href="#timeline" className="hover:text-electric-purple transition-colors">Timeline</Link>
       </div>
 
       <div className="flex items-center gap-6">
@@ -47,10 +45,11 @@ export default function Navbar() {
           className="md:hidden fixed inset-0 bg-obsidian z-[60] flex flex-col p-12 gap-8 text-3xl font-display uppercase tracking-widest"
         >
           <button className="self-end text-xl" onClick={() => setIsOpen(false)}>CLOSE</button>
-          <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Stronghold</Link>
-          <Link href="#merch" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">The Pit</Link>
-          <Link href="#tour" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Electric Hell</Link>
-          <Link href="/backstage" onClick={() => setIsOpen(false)} className="text-cobalt-blue">Backstage</Link>
+          <Link href="#banda" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Banda</Link>
+          <Link href="#merch" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Merch</Link>
+          <Link href="#discografia" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Discografía</Link>
+          <Link href="#media" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Media</Link>
+          <Link href="#timeline" onClick={() => setIsOpen(false)} className="hover:text-electric-purple">Timeline</Link>
         </motion.div>
       )}
     </nav>
